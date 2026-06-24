@@ -1,0 +1,17 @@
+# OS / editor clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~
+*.tmp
+*.bak
+
+# Local-only content (folders preserved via .gitkeep)
+/paper/*
+!paper/.gitkeep
+
+/reference/*
+!reference/.gitkeep

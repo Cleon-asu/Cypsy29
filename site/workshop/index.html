@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cypsy29 Workshop | Conversational Virtual Humans</title>
+  <meta name="description" content="Academic workshop on Conversational Virtual Humans in Adaptive Simulation Environments at Cypsy29 2026." />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#2563eb",
+            secondary: "#1e293b",
+            "background-light": "#ffffff",
+            "background-off": "#f3f4f6",
+            "background-dark": "#0f172a"
+          },
+          fontFamily: {
+            display: ["Playfair Display", "serif"],
+            body: ["Inter", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body class="bg-background-light dark:bg-background-dark text-secondary dark:text-slate-200 font-body antialiased">
+  <div class="aurora-bg" aria-hidden="true"></div>
+
+  <header class="sticky top-0 z-50 border-b border-white/30 dark:border-white/10 backdrop-blur-xl bg-white/80 dark:bg-slate-950/70">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
+      <a href="#home" class="flex items-center gap-3">
+        <span class="size-9 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+          <span class="material-symbols-outlined">co_present</span>
+        </span>
+        <div>
+          <p class="font-display text-xl font-bold text-slate-900 dark:text-white">Cypsy29 Workshop</p>
+          <p class="text-xs uppercase tracking-[0.25em] text-slate-500 dark:text-slate-400">Virtual Humans</p>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold">
+        <a href="#overview" class="nav-link">Overview</a>
+        <a href="#structure" class="nav-link">Structure</a>
+        <a href="#objectives" class="nav-link">Objectives</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#register" class="nav-link">Program</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">
+          <span class="material-symbols-outlined" id="themeIcon">dark_mode</span>
+        </button>
+        <a href="../index.html" class="hidden sm:inline-flex rounded-full px-5 py-2.5 border border-slate-200 dark:border-slate-700 text-sm font-semibold hover:border-primary hover:text-primary transition-colors">Main Site</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="max-w-7xl mx-auto px-6 pt-20 pb-14 reveal-on-scroll">
+      <div class="grid lg:grid-cols-[1.45fr_0.85fr] gap-10 items-start">
+        <div>
+          <p class="inline-flex items-center gap-2 rounded-full border border-blue-200 dark:border-blue-800 bg-blue-50/80 dark:bg-blue-950/50 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-primary">
+            <span class="size-1.5 rounded-full bg-primary animate-pulse"></span>
+            Cypsy29 &middot; June 30, 2026
+          </p>
+          <h1 class="mt-5 text-4xl md:text-5xl lg:text-[3.25rem] font-display font-bold text-slate-900 dark:text-white leading-[1.08]">
+            Conversational Virtual Humans in Adaptive Simulation Environments
+          </h1>
+          <p class="mt-5 text-lg leading-relaxed text-slate-600 dark:text-slate-300 max-w-2xl">
+            An interdisciplinary workshop bridging cognitive science, conversational AI, and immersive technology to study how people perceive and interact with embodied virtual agents.
+          </p>
+          <div class="mt-7 flex flex-wrap gap-3">
+            <a href="#projects" class="action-btn action-btn-primary">
+              <span class="material-symbols-outlined text-xl">view_carousel</span>
+              Hands-On Projects
+            </a>
+            <a href="https://easychair.org/smart-program/CyPsy29/2026-06-30.html#talk:309792" class="action-btn action-btn-alt" target="_blank" rel="noreferrer">
+              <span class="material-symbols-outlined text-xl">open_in_new</span>
+              Conference Program
+            </a>
+          </div>
+        </div>
+
+        <aside class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white/70 dark:bg-slate-900/60 divide-y divide-slate-100 dark:divide-slate-800 reveal-on-scroll delay-100">
+          <div class="px-5 pt-5 pb-4">
+            <p class="text-xs uppercase tracking-[0.24em] text-slate-400 dark:text-slate-500">Presenters</p>
+            <ul class="mt-3 space-y-1.5 text-sm font-medium text-slate-700 dark:text-slate-200">
+              <li>Alexandre Rodrigues</li>
+              <li>Carlos Leon</li>
+              <li>Bruna Ant&oacute;nio</li>
+              <li>Sofia Francisco</li>
+            </ul>
+          </div>
+          <div class="px-5 py-4">
+            <p class="text-xs uppercase tracking-[0.24em] text-slate-400 dark:text-slate-500">Format</p>
+            <p class="mt-1.5 text-sm text-slate-700 dark:text-slate-200">Two-part: conceptual lectures then live interaction demo</p>
+          </div>
+          <div class="px-5 py-4">
+            <p class="text-xs uppercase tracking-[0.24em] text-slate-400 dark:text-slate-500">Audience</p>
+            <p class="mt-1.5 text-sm text-slate-700 dark:text-slate-200">Interdisciplinary &mdash; no advanced technical background required</p>
+          </div>
+          <div class="px-5 py-4">
+            <a href="https://easychair.org/smart-program/CyPsy29/2026-06-30.html#talk:309792" class="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline" target="_blank" rel="noreferrer">
+              <span class="material-symbols-outlined text-base">event</span>
+              View in program
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section id="overview" class="py-14 px-6 bg-slate-50/60 dark:bg-slate-900/40 border-y border-slate-200/70 dark:border-slate-800 reveal-on-scroll">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="section-title">Overview</h2>
+        <div class="mt-8 grid md:grid-cols-3 gap-5">
+          <article class="module-card">
+            <div class="module-icon"><span class="material-symbols-outlined">diversity_3</span></div>
+            <h3>Social Foundations</h3>
+            <p>Anthropomorphism, agency, social presence, and Theory of Mind in human-agent encounters.</p>
+          </article>
+          <article class="module-card">
+            <div class="module-icon"><span class="material-symbols-outlined">monitoring</span></div>
+            <h3>Measurement Proxies</h3>
+            <p>Behavioral, physiological, and self-report data integrated as experimental measurement frameworks.</p>
+          </article>
+          <article class="module-card">
+            <div class="module-icon"><span class="material-symbols-outlined">deployed_code</span></div>
+            <h3>System Architecture</h3>
+            <p>Game engines, LLM-driven dialogue, speech pipelines, avatars, and biosignal synchronization.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STRUCTURE -->
+    <section id="structure" class="max-w-7xl mx-auto px-6 py-16 reveal-on-scroll">
+      <div class="grid lg:grid-cols-[0.85fr_1.15fr] gap-10 items-start">
+        <div>
+          <h2 class="section-title">Workshop Structure</h2>
+          <p class="mt-4 text-slate-600 dark:text-slate-300">A compact progression from theory to live demonstration, closing with open discussion on applications and ethics.</p>
+        </div>
+        <div class="grid gap-3">
+          <div class="timeline-item">
+            <p class="text-xs uppercase tracking-[0.22em] text-primary font-semibold">Part 1</p>
+            <h3 class="mt-1 font-display font-bold text-slate-900 dark:text-white">Conceptual lectures &amp; case illustrations</h3>
+            <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Theoretical foundations, measurement frameworks, and experimental paradigms.</p>
+          </div>
+          <div class="timeline-item">
+            <p class="text-xs uppercase tracking-[0.22em] text-primary font-semibold">Part 2</p>
+            <h3 class="mt-1 font-display font-bold text-slate-900 dark:text-white">Live interaction demonstration</h3>
+            <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Integrated virtual human setup with conversational agents and synchronized multimodal recording.</p>
+          </div>
+          <div class="timeline-item">
+            <p class="text-xs uppercase tracking-[0.22em] text-primary font-semibold">Technology</p>
+            <h3 class="mt-1 font-display font-bold text-slate-900 dark:text-white">Implementation stack walkthrough</h3>
+            <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Game engines, LLM dialogue, speech pipelines, avatars, and biosignal acquisition architecture.</p>
+          </div>
+          <div class="timeline-item">
+            <p class="text-xs uppercase tracking-[0.22em] text-primary font-semibold">Closing</p>
+            <h3 class="mt-1 font-display font-bold text-slate-900 dark:text-white">Future directions &amp; open discussion</h3>
+            <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Methodological challenges, ethics, and applications in health, training, and education.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OBJECTIVES -->
+    <section id="objectives" class="py-14 px-6 bg-slate-50/60 dark:bg-slate-900/40 border-y border-slate-200/70 dark:border-slate-800 reveal-on-scroll">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="section-title">Learning Objectives</h2>
+        <div class="mt-8 grid md:grid-cols-2 xl:grid-cols-3 gap-4">
+          <div class="flex gap-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white/70 dark:bg-slate-900/60 px-5 py-4">
+            <span class="text-2xl font-display font-bold text-primary/30 leading-none shrink-0">01</span>
+            <p class="text-sm text-slate-700 dark:text-slate-300">Virtual humans as social actors in human-machine interaction.</p>
+          </div>
+          <div class="flex gap-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white/70 dark:bg-slate-900/60 px-5 py-4">
+            <span class="text-2xl font-display font-bold text-primary/30 leading-none shrink-0">02</span>
+            <p class="text-sm text-slate-700 dark:text-slate-300">Anthropomorphism, agency perception, and social presence mechanisms.</p>
+          </div>
+          <div class="flex gap-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white/70 dark:bg-slate-900/60 px-5 py-4">
+            <span class="text-2xl font-display font-bold text-primary/30 leading-none shrink-0">03</span>
+            <p class="text-sm text-slate-700 dark:text-slate-300">Multimodal measurement: behavioral, physiological, and self-report proxies.</p>
+          </div>
+          <div class="flex gap-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white/70 dark:bg-slate-900/60 px-5 py-4">
+            <span class="text-2xl font-display font-bold text-primary/30 leading-none shrink-0">04</span>
+            <p class="text-sm text-slate-700 dark:text-slate-300">Technical infrastructure: conversational AI, environments, and biosignal systems.</p>
+          </div>
+          <div class="flex gap-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white/70 dark:bg-slate-900/60 px-5 py-4">
+            <span class="text-2xl font-display font-bold text-primary/30 leading-none shrink-0">05</span>
+            <p class="text-sm text-slate-700 dark:text-slate-300">Methodological challenges in designing studies with virtual humans.</p>
+          </div>
+          <div class="flex gap-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white/70 dark:bg-slate-900/60 px-5 py-4">
+            <span class="text-2xl font-display font-bold text-primary/30 leading-none shrink-0">06</span>
+            <p class="text-sm text-slate-700 dark:text-slate-300">Research and applied ideas for health, education, training, and human-AI collaboration.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS — MAIN FOCUS -->
+    <section id="projects" class="max-w-7xl mx-auto px-6 py-16 reveal-on-scroll">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+        <div>
+          <h2 class="section-title">Hands-On Virtual Human Projects</h2>
+          <p class="mt-3 max-w-xl text-slate-600 dark:text-slate-300">Three applied concepts demonstrating the workshop themes. Select a card to expand its design focus.</p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6" id="conditionsGrid">
+        <article class="module-card condition-card flex flex-col"
+          data-title="Educational VH"
+          data-detail="Educational VH is designed as an interactive teaching partner that explains core concepts in a pragmatic, adaptive manner. The emphasis is on guided explanation, dialogue-based clarification, and supporting learning through an approachable embodied interface.">
+          <div class="overflow-hidden rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 aspect-video">
+            <img src="educational_vh.svg" alt="Educational Virtual Human" class="w-full h-full object-cover" />
+          </div>
+          <div class="mt-4 flex items-center gap-1.5 text-xs uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">
+            <span class="material-symbols-outlined text-sm text-primary">menu_book</span>Education
+          </div>
+          <h3>Educational VH</h3>
+          <p>An embodied tutor that adapts explanations to guide users through complex concepts interactively.</p>
+        </article>
+
+        <article class="module-card condition-card flex flex-col"
+          data-title="Conference Guide"
+          data-detail="Conference Guide uses a friendly multilingual virtual human to answer questions about the Cypsy29 event. The concept aligns with a retrieval-augmented approach in which conference schedules, rooms, and program information can be surfaced through natural conversation.">
+          <div class="overflow-hidden rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 aspect-video">
+            <img src="conference_guide.png" alt="Conference Guide virtual human" class="w-full h-full object-cover" />
+          </div>
+          <div class="mt-4 flex items-center gap-1.5 text-xs uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">
+            <span class="material-symbols-outlined text-sm text-primary">language</span>Event support
+          </div>
+          <h3>Conference Guide</h3>
+          <p>A multilingual virtual host answering questions about Cypsy29 using conference-aware knowledge.</p>
+        </article>
+
+        <article class="module-card condition-card flex flex-col"
+          data-title="Meditation Master"
+          data-detail="Meditation Master explores a relaxation-focused virtual human that adapts its guidance using biofeedback-informed interaction. The experience centers on paced breathing, calming instructions, and physiological signal-responsive feedback.">
+          <div class="overflow-hidden rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 aspect-video">
+            <img src="meditation_master.svg" alt="Meditation Master virtual human" class="w-full h-full object-cover" />
+          </div>
+          <div class="mt-4 flex items-center gap-1.5 text-xs uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">
+            <span class="material-symbols-outlined text-sm text-primary">self_improvement</span>Biofeedback
+          </div>
+          <h3>Meditation Master</h3>
+          <p>Guides relaxation through paced techniques, adapting to the user via physiological signals.</p>
+        </article>
+      </div>
+
+      <div id="conditionDetail" class="mt-6 hidden rounded-2xl border border-slate-200 dark:border-slate-700 bg-white/85 dark:bg-slate-900/75 p-6">
+        <p class="text-xs uppercase tracking-[0.25em] text-primary font-semibold">Project Focus</p>
+        <h3 id="conditionTitle" class="mt-2 text-2xl font-display font-bold text-slate-900 dark:text-white"></h3>
+        <p id="conditionText" class="mt-3 text-slate-600 dark:text-slate-300 leading-relaxed"></p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="register" class="py-14 px-6 bg-slate-50/60 dark:bg-slate-900/40 border-y border-slate-200/70 dark:border-slate-800 reveal-on-scroll">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+        <div>
+          <h2 class="section-title">Join the session</h2>
+          <p class="mt-3 text-slate-600 dark:text-slate-300">View the full workshop listing in the official Cypsy29 program for scheduling details.</p>
+        </div>
+        <div class="flex flex-wrap gap-3 shrink-0">
+          <a href="https://easychair.org/smart-program/CyPsy29/2026-06-30.html#talk:309792" class="action-btn action-btn-primary" target="_blank" rel="noreferrer">
+            <span class="material-symbols-outlined text-xl">event</span>
+            Open Program Entry
+          </a>
+          <a href="../index.html" class="action-btn action-btn-alt">
+            <span class="material-symbols-outlined text-xl">arrow_back</span>
+            Main Site
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-slate-200 dark:border-slate-800 py-8 px-6 bg-white/70 dark:bg-slate-950/50 backdrop-blur-lg">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500 dark:text-slate-400">
+      <p>&copy; 2026 Cypsy29 Workshop Team</p>
+      <div class="flex items-center gap-4">
+        <a href="#home" class="hover:text-primary">Back to top</a>
+        <a href="../index.html" class="hover:text-primary">Main site</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

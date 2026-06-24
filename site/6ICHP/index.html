@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>6ICHP | How Personas Can Influence Agents to Play Split or Steal</title>
+  <meta
+    name="description"
+    content="Interactive conference page with slide navigation for How Personas Can Influence Agents to Play Split or Steal at 6ICHP."
+  />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#2563eb",
+            secondary: "#1e293b",
+            "background-light": "#ffffff",
+            "background-off": "#f3f4f6",
+            "background-dark": "#0f172a"
+          },
+          fontFamily: {
+            display: ["Playfair Display", "serif"],
+            body: ["Inter", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body class="bg-background-light dark:bg-background-dark text-secondary dark:text-slate-200 font-body antialiased">
+  <div class="aurora-bg" aria-hidden="true"></div>
+
+  <header class="sticky top-0 z-50 border-b border-white/30 dark:border-white/10 backdrop-blur-xl bg-white/80 dark:bg-slate-950/70">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
+      <a href="#home" class="flex items-center gap-3 group">
+        <span class="size-9 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+          <span class="material-symbols-outlined">slideshow</span>
+        </span>
+        <div>
+          <p class="font-display text-xl font-bold text-slate-900 dark:text-white">6ICHP Showcase</p>
+          <p class="text-xs uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">Split or Steal</p>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold">
+        <a href="#overview" class="nav-link">Overview</a>
+        <a href="#slides" class="nav-link">Slides</a>
+        <a href="#findings" class="nav-link">Findings</a>
+        <a href="#dataset" class="nav-link">Dataset</a>
+        <a href="../index.html" class="nav-link">Main Site</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">
+          <span class="material-symbols-outlined" id="themeIcon">dark_mode</span>
+        </button>
+        <a href="../index.html" class="hidden sm:inline-flex rounded-full px-5 py-2.5 border border-slate-200 dark:border-slate-700 text-sm font-semibold hover:border-primary hover:text-primary transition-colors">Back to Main</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="max-w-7xl mx-auto px-6 pt-20 pb-12 reveal-on-scroll">
+      <div class="grid lg:grid-cols-[1.3fr_0.7fr] gap-8 items-start">
+        <div>
+          <p class="inline-flex items-center gap-2 rounded-full border border-blue-200 dark:border-blue-800 bg-blue-50/80 dark:bg-blue-950/50 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-primary">
+            <span class="size-1.5 rounded-full bg-primary animate-pulse"></span>
+            6th International Conference on Philosophy of Mind
+          </p>
+          <h1 class="mt-6 text-4xl md:text-5xl lg:text-6xl font-display font-bold text-slate-900 dark:text-white leading-[1.08]">
+            <span class="gradient-text">How Personas Can Influence Agents</span><br />
+            to Play Split or Steal
+          </h1>
+          <p class="mt-5 text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
+            Explore the full conference slide deck with an interactive, easy-to-navigate viewer.
+            This page summarizes the study and lets you browse all 32 slides quickly.
+          </p>
+          <p class="mt-4 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Explore o conjunto completo de diapositivos da conferencia com um visualizador interativo e simples de navegar.
+            Esta pagina resume o estudo e permite percorrer os 32 diapositivos rapidamente.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#slides" class="action-btn action-btn-primary">
+              <span class="material-symbols-outlined text-xl">view_carousel</span>
+              Open Slide Viewer
+            </a>
+            <a href="#dataset" class="action-btn action-btn-alt">
+              <span class="material-symbols-outlined text-xl">dataset</span>
+              Dataset &amp; DOI
+            </a>
+          </div>
+        </div>
+
+        <aside class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-900/70 p-5 grid gap-3 reveal-on-scroll delay-100">
+          <div class="metric-card">
+            <p class="metric-value">160</p>
+            <p class="metric-label">Sessions</p>
+          </div>
+          <div class="metric-card">
+            <p class="metric-value">74%</p>
+            <p class="metric-label">Mutual Split</p>
+          </div>
+          <div class="metric-card">
+            <p class="metric-value">&lt;11%</p>
+            <p class="metric-label">Exploitation Rounds</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="overview" class="py-14 px-6 bg-slate-50/60 dark:bg-slate-900/40 border-y border-slate-200/70 dark:border-slate-800 reveal-on-scroll">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="section-title">Study Overview / Visao Geral</h2>
+        <div class="mt-8 grid lg:grid-cols-2 gap-6">
+          <article class="module-card">
+            <div class="module-icon"><span class="material-symbols-outlined">science</span></div>
+            <h3>English Summary</h3>
+            <p>
+              This work tested persona prompts in an iterated Split or Steal game where agents interacted with a virtual human.
+              Four open models were evaluated at two temperatures while the virtual human used GPT-4.1 mini.
+              Cooperation dominated outcomes, with model and persona differences shaping strategy.
+            </p>
+          </article>
+          <article class="module-card">
+            <div class="module-icon"><span class="material-symbols-outlined">translate</span></div>
+            <h3>Resumo em Portugues</h3>
+            <p>
+              Este trabalho avaliou prompts de persona num jogo iterado de Split or Steal, onde agentes interagiram com um humano virtual.
+              Foram testados quatro modelos abertos em duas temperaturas, enquanto o humano virtual usou GPT-4.1 mini.
+              A cooperacao dominou os resultados, com diferencas de modelo e persona a influenciarem a estrategia.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="slides" class="max-w-7xl mx-auto px-6 py-16 reveal-on-scroll delay-100">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+        <div>
+          <h2 class="section-title">Interactive Slide Viewer</h2>
+          <p class="mt-3 max-w-2xl text-slate-600 dark:text-slate-300">
+            Navigate with buttons, keyboard arrows, swipe gestures, the progress bar, or thumbnails.
+          </p>
+        </div>
+        <a id="slideOpen" href="1.png" target="_blank" rel="noreferrer" class="action-btn action-btn-alt">
+          <span class="material-symbols-outlined text-xl">open_in_new</span>
+          Open Current Slide
+        </a>
+      </div>
+
+      <div class="slide-viewer" data-slide-viewer data-total-slides="32" data-slide-prefix="" data-slide-extension=".png">
+        <div class="slide-stage-wrap">
+          <div class="slide-stage" id="slideStage">
+            <img id="slideImage" src="1.png" alt="Slide 1 from the 6ICHP conference presentation." loading="eager" decoding="async" />
+          </div>
+
+          <div class="slide-controls" aria-label="Slide controls">
+            <button id="slidePrev" class="viewer-btn" type="button" aria-label="Previous slide">
+              <span class="material-symbols-outlined">arrow_back</span>
+              Previous
+            </button>
+            <input id="slideRange" class="slide-range" type="range" min="1" max="32" step="1" value="1" aria-label="Slide position" />
+            <button id="slideNext" class="viewer-btn" type="button" aria-label="Next slide">
+              Next
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+          </div>
+
+          <div class="slide-meta" role="status" aria-live="polite">
+            <p id="slideCounter" class="slide-counter">1 / 32</p>
+            <p id="slideCaption" class="slide-caption">
+              EN: Conference presentation slide 1. PT: Diapositivo 1 da apresentacao da conferencia.
+            </p>
+            <p id="slideLive" class="sr-only" aria-live="polite"></p>
+          </div>
+        </div>
+
+        <aside class="slide-rail" aria-label="Slide thumbnails">
+          <h3 class="font-display text-xl font-bold text-slate-900 dark:text-white">Quick Jump</h3>
+          <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">Jump directly to any slide.</p>
+          <div id="slideThumbs" class="slide-thumbs"></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="findings" class="py-14 px-6 bg-slate-50/60 dark:bg-slate-900/40 border-y border-slate-200/70 dark:border-slate-800 reveal-on-scroll delay-200">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="section-title">Key Findings / Resultados Principais</h2>
+        <div class="mt-8 grid md:grid-cols-2 xl:grid-cols-4 gap-4">
+          <article class="module-card">
+            <div class="module-icon"><span class="material-symbols-outlined">handshake</span></div>
+            <h3>Cooperation First</h3>
+            <p>Mutual Split outcomes occurred in roughly 74% of rounds across sessions.</p>
+          </article>
+          <article class="module-card">
+            <div class="module-icon"><span class="material-symbols-outlined">model_training</span></div>
+            <h3>Model Differences</h3>
+            <p>phi4 and Ministral stayed more cooperative, while Gemma models varied more by context.</p>
+          </article>
+          <article class="module-card">
+            <div class="module-icon"><span class="material-symbols-outlined">person</span></div>
+            <h3>Persona Effect</h3>
+            <p>Prosocial and Principled personas were more cooperative; Analytical personas exploited more.</p>
+          </article>
+          <article class="module-card">
+            <div class="module-icon"><span class="material-symbols-outlined">forum</span></div>
+            <h3>Dialogue Signal</h3>
+            <p>Friendship language aligned with Split, while money and vengeance terms aligned with Steal.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="dataset" class="max-w-7xl mx-auto px-6 py-16 reveal-on-scroll delay-300">
+      <div class="grid lg:grid-cols-[1.15fr_0.85fr] gap-8 items-start">
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-900/70 p-6">
+          <h2 class="section-title">Dataset / Dados</h2>
+          <p class="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed">
+            Leon, C., &amp; Rodrigues, A. (2026). Game data and annotations from agent and virtual human in a split-or-steal interaction.
+            Zenodo. doi: 10.5281/zenodo.19854671
+          </p>
+          <p class="mt-3 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+            Includes annotations from sessions presented at the 6th International Conference on Philosophy of Mind.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="https://doi.org/10.5281/zenodo.19854671" target="_blank" rel="noreferrer" class="action-btn action-btn-primary">
+              <span class="material-symbols-outlined text-xl">open_in_new</span>
+              Open DOI
+            </a>
+            <a href="../workshop/index.html" class="action-btn action-btn-alt">
+              <span class="material-symbols-outlined text-xl">co_present</span>
+              Workshop Page
+            </a>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-900/70 p-6">
+          <p class="text-xs uppercase tracking-[0.24em] text-slate-500 dark:text-slate-400">Navigation Tips</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-600 dark:text-slate-300">
+            <li>Use arrow keys to move between slides.</li>
+            <li>Use Home/End to jump to the first or last slide.</li>
+            <li>On mobile, swipe left or right on the slide image.</li>
+            <li>Use thumbnails for fast non-linear browsing.</li>
+          </ul>
+          <a href="#home" class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">
+            <span class="material-symbols-outlined text-base">north</span>
+            Back to top
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 dark:border-slate-800 py-8 px-6 bg-white/70 dark:bg-slate-950/50 backdrop-blur-lg">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500 dark:text-slate-400">
+      <p>&copy; 2026 6ICHP Showcase</p>
+      <div class="flex items-center gap-4">
+        <a href="../index.html" class="hover:text-primary">Main site</a>
+        <a href="../workshop/index.html" class="hover:text-primary">Workshop</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>
