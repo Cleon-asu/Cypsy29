@@ -9,6 +9,11 @@ body {
     linear-gradient(180deg, rgba(248, 250, 252, 0.96), rgba(241, 245, 249, 0.9));
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .aurora-bg {
   position: fixed;
   inset: 0;
@@ -360,12 +365,14 @@ body {
   border: 1px solid rgb(226 232 240);
   background:
     linear-gradient(180deg, rgba(241, 245, 249, 0.9), rgba(226, 232, 240, 0.6));
-  min-height: 17rem;
+  min-height: 12rem;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   touch-action: pan-y;
+  width: 100%;
+  max-width: 100%;
 }
 
 .dark .slide-stage {
@@ -375,10 +382,11 @@ body {
 }
 
 .slide-stage img {
+  display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
-  max-height: 72vh;
-  object-fit: contain;
+  max-height: 65vh;
 }
 
 .slide-controls {
@@ -387,6 +395,7 @@ body {
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
   gap: 0.75rem;
+  min-width: 0;
 }
 
 .viewer-btn {
@@ -573,6 +582,19 @@ body {
     gap: 0.7rem;
   }
 
+  #slides.px-6,
+  #overview.px-6,
+  #findings.px-6,
+  #home .px-6,
+  #dataset .px-6 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .slide-stage-wrap {
+    padding: 0.5rem;
+  }
+
   .slide-controls {
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
@@ -590,11 +612,18 @@ body {
   }
 
   .slide-stage {
-    min-height: 12rem;
+    min-height: unset;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0.6rem;
   }
 
   .slide-stage img {
-    max-height: 58vh;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 38vh;
   }
 
   .slide-thumbs {
@@ -607,33 +636,42 @@ body {
   }
 
   .slide-thumb {
-    min-width: 6.5rem;
+    min-width: 5rem;
     flex: 0 0 auto;
+    padding: 0.2rem;
+  }
+
+  .slide-thumb img {
+    aspect-ratio: 16 / 9;
   }
 
   .slide-thumb span {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
+  }
+
+  .slide-rail {
+    padding: 0.75rem;
   }
 
   .slide-rail h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .slide-counter {
-    font-size: 1.1rem;
+    font-size: 1rem;
+  }
+
+  .slide-caption {
+    font-size: 0.85rem;
   }
 }
 
 @media (max-width: 480px) {
-  .slide-stage {
-    min-height: 10rem;
-  }
-
   .slide-stage img {
-    max-height: 50vh;
+    max-height: 32vh;
   }
 
   .slide-thumb {
-    min-width: 5.5rem;
+    min-width: 4.5rem;
   }
 }
