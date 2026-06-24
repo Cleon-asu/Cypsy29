@@ -62,8 +62,28 @@
         <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">
           <span class="material-symbols-outlined" id="themeIcon">dark_mode</span>
         </button>
+        <button id="mobileMenuBtn" class="icon-btn lg:hidden" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+          <span class="material-symbols-outlined" id="menuIcon">menu</span>
+        </button>
         <a href="../index.html" class="hidden sm:inline-flex rounded-full px-5 py-2.5 border border-slate-200 dark:border-slate-700 text-sm font-semibold hover:border-primary hover:text-primary transition-colors">Back to Main</a>
       </div>
+    </div>
+
+    <div id="mobileNav" class="mobile-nav lg:hidden" role="dialog" aria-modal="true" aria-label="Site navigation">
+      <div class="px-6 py-4 flex items-center justify-between border-b border-slate-200 dark:border-slate-700">
+        <span class="font-display text-lg font-bold text-slate-900 dark:text-white">Menu</span>
+        <button id="mobileMenuClose" class="icon-btn" aria-label="Close menu">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <nav class="flex flex-col p-6 gap-4 text-base font-semibold">
+        <a href="#overview" class="mobile-nav-link">Overview</a>
+        <a href="#slides" class="mobile-nav-link">Slides</a>
+        <a href="#findings" class="mobile-nav-link">Findings</a>
+        <a href="#dataset" class="mobile-nav-link">Dataset</a>
+        <a href="../index.html" class="mobile-nav-link">Main Site</a>
+        <a href="../index.html" class="action-btn action-btn-alt mt-2">Back to Main</a>
+      </nav>
     </div>
   </header>
 

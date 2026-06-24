@@ -31,6 +31,46 @@ themeToggle?.addEventListener("click", () => {
   localStorage.setItem("cypsy-theme", next);
 });
 
+const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+const mobileMenuClose = document.getElementById("mobileMenuClose");
+const mobileNav = document.getElementById("mobileNav");
+const menuIcon = document.getElementById("menuIcon");
+
+function openMobileMenu() {
+  mobileNav?.classList.add("is-open");
+  mobileMenuBtn?.setAttribute("aria-expanded", "true");
+  document.body.style.overflow = "hidden";
+}
+
+function closeMobileMenu() {
+  mobileNav?.classList.remove("is-open");
+  mobileMenuBtn?.setAttribute("aria-expanded", "false");
+  document.body.style.overflow = "";
+}
+
+mobileMenuBtn?.addEventListener("click", () => {
+  const isOpen = mobileNav?.classList.contains("is-open");
+  if (isOpen) {
+    closeMobileMenu();
+  } else {
+    openMobileMenu();
+  }
+});
+
+mobileMenuClose?.addEventListener("click", closeMobileMenu);
+
+mobileNav?.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    closeMobileMenu();
+  });
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && mobileNav?.classList.contains("is-open")) {
+    closeMobileMenu();
+  }
+});
+
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
