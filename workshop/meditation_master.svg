@@ -1,0 +1,18 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#F3F4FF"/>
+  <rect x="70" y="70" width="1060" height="760" rx="40" fill="url(#paint0_linear)"/>
+  <circle cx="600" cy="285" r="88" fill="#4F46E5" fill-opacity="0.12"/>
+  <path d="M434 530C486 468 526 438 600 438C674 438 714 468 766 530" stroke="#4338CA" stroke-width="28" stroke-linecap="round"/>
+  <path d="M360 610C446 532 506 502 600 502C694 502 754 532 840 610" stroke="#6366F1" stroke-opacity="0.6" stroke-width="24" stroke-linecap="round"/>
+  <path d="M308 688C420 598 506 558 600 558C694 558 780 598 892 688" stroke="#818CF8" stroke-opacity="0.46" stroke-width="20" stroke-linecap="round"/>
+  <rect x="165" y="160" width="235" height="58" rx="18" fill="white" fill-opacity="0.82"/>
+  <text x="202" y="198" fill="#312E81" font-family="Arial, sans-serif" font-size="28" font-weight="700">Breathing pace</text>
+  <rect x="180" y="735" width="840" height="92" rx="26" fill="white" fill-opacity="0.82"/>
+  <text x="216" y="794" fill="#0F172A" font-family="Arial, sans-serif" font-size="54" font-weight="700">Meditation Master</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="170" y1="116" x2="1008" y2="784" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FAFAFF"/>
+      <stop offset="1" stop-color="#E3E5FF"/>
+    </linearGradient>
+  </defs>
+</svg>
